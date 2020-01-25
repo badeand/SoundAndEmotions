@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d '{"sound":"jazz"}' http://192.168.10.168:1880/hello-json
