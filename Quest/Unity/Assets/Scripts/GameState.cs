@@ -7,8 +7,9 @@ namespace DefaultNamespace
     [Serializable]
     public class GameState : MonoBehaviour
     {
-        public List<Category> Categories = new List<Category>();
-        public List<String> PickedUpSoundRecordingNames = new List<String>();
+        public List<Category> categories = new List<Category>();
+        public List<String> pickedUpSoundRecordingNames = new List<String>();
+        public List<String> unCategorizedSoundRecordingNames = new List<String>();
 
         
     }

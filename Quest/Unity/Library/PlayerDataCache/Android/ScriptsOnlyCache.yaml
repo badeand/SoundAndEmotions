@@ -950,7 +950,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 936f7290a734ffa837fe99ce3d81fd8a
+      Hash: 175fa7ac4220c49cc70275e832292487
     assemblyName: Assembly-CSharp.dll
     namespaceName: DefaultNamespace
     className: GameState
@@ -1142,7 +1142,7 @@ ScriptsOnlyBuild:
     className: OvrAvatarRemoteDriver
   - hash:
       serializedVersion: 2
-      Hash: 8ca157f62d4f7c6463bd3fb681ce2c4a
+      Hash: 31c68e70b86138735b2dcd8de2927d32
     assemblyName: Assembly-CSharp.dll
     namespaceName: DefaultNamespace
     className: GameStateManager

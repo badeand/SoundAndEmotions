@@ -6,16 +6,14 @@ using UnityEngine.Networking;
 
 namespace DefaultNamespace
 {
-    
-
     public class GameStateManager : MonoBehaviour
     {
-
-        public List<SoundRecording> pickedUpSoundRecordings;
+        public List<SoundRecording> pickedUpSoundRecordings = new List<SoundRecording>();
         public List<CategoryContainer> categoryContainers;
-        
+        public List<SoundRecording> managedSoundRecordings = new List<SoundRecording>();
+
         public void AddToPickedUpSoundRecordings(SoundRecording soundRecording)
-        { 
+        {
             pickedUpSoundRecordings.Add(soundRecording);
             SendUpdateToServer();
         }
@@ -29,12 +27,29 @@ namespace DefaultNamespace
         public void SendUpdateToServer()
         {
             GameState gameState = new GameState();
-            
-            foreach( var soundRecording in pickedUpSoundRecordings)
+
+            foreach (var soundRecording in pickedUpSoundRecordings)
             {
-                gameState.PickedUpSoundRecordingNames.Add(soundRecording.Name);
+                gameState.pickedUpSoundRecordingNames.Add(soundRecording.Name);
             }
 
+            List<SoundRecording> uncategrozed = new List<SoundRecording>();
+            uncategrozed.AddRange(managedSoundRecordings);
+            foreach (var categoryContainer in categoryContainers)
+            {
+                foreach (var r in categoryContainer.soundRecordings)
+                {
+                    uncategrozed.Remove(r);
+                }
+            }
+
+            foreach (var _recording in uncategrozed)
+            {
+                gameState.unCategorizedSoundRecordingNames.Add(_recording.Name);
+            }
+
+
+            
             foreach (var categoryContainer in categoryContainers)
             {
                 var category = new Category();
@@ -43,9 +58,10 @@ namespace DefaultNamespace
                 {
                     category.SoundRecordingNames.Add(soundRecording.Name);
                 }
-                gameState.Categories.Add(category);
+
+                gameState.categories.Add(category);
             }
-            
+
             StartCoroutine(Post("http://192.168.10.165:1880/gamestate", JsonUtility.ToJson(gameState)));
         }
 
@@ -60,6 +76,4 @@ namespace DefaultNamespace
             Debug.Log("Status Code: " + request.responseCode);
         }
     }
-    
-    
 }

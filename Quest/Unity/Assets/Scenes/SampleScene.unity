@@ -458,6 +458,10 @@ MonoBehaviour:
   categoryContainers:
   - {fileID: 476479391}
   - {fileID: 1052015511}
+  managedSoundRecordings:
+  - {fileID: 1938890068}
+  - {fileID: 1487411244}
+  - {fileID: 669348641}
 --- !u!114 &284811447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,8 +474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2074988207db4e699040a0eb4f66165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Categories: []
-  PickedUpSoundRecordingNames: []
+  categories: []
+  pickedUpSoundRecordingNames: []
+  unCategorizedSoundRecordingNames: []
 --- !u!1 &286958107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,7 +1295,7 @@ GameObject:
   - component: {fileID: 669348642}
   - component: {fileID: 669348641}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: JazzGuitarItem
   m_TagString: SoundRecording
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2962,7 +2967,7 @@ GameObject:
   - component: {fileID: 1487411245}
   - component: {fileID: 1487411244}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: HeavyItem
   m_TagString: SoundRecording
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4004,7 +4009,7 @@ GameObject:
   - component: {fileID: 1938890069}
   - component: {fileID: 1938890068}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: OrganItem
   m_TagString: SoundRecording
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
