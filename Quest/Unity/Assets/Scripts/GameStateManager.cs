@@ -34,7 +34,7 @@ namespace DefaultNamespace
                 gameState.PickedUpSoundRecordingNames.Add(soundRecording.Name);
             }
             
-            StartCoroutine(Post("http://192.168.10.165:1880/categoryenter", JsonUtility.ToJson(gameState)));
+            StartCoroutine(Post("http://192.168.10.165:1880/gamestate", JsonUtility.ToJson(gameState)));
         }
 
         IEnumerator Post(string url, string bodyJsonString)
