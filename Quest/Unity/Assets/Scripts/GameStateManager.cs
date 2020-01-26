@@ -16,7 +16,7 @@ namespace DefaultNamespace
 
         private void Awake()
         {
-            // SendUpdateToServer();
+            SendUpdateToServer();
         }
 
         public void AddToPickedUpSoundRecordings(SoundRecording soundRecording)

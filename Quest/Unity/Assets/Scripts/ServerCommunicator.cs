@@ -22,7 +22,6 @@ namespace DefaultNamespace
             request.downloadHandler = (DownloadHandler) new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
             yield return request.SendWebRequest();
-            Debug.Log("Status Code: " + request.responseCode);
         }
     }
 }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Platform;
-using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -10,8 +9,8 @@ public class Player : MonoBehaviour
     public int score;
 
     public static Player Instance;
-    public TextMeshProUGUI scoreText;
 
+    
     private void Awake()
     {
         Instance = this;
@@ -25,15 +24,9 @@ public class Player : MonoBehaviour
 
     private void OnUserEntiteledToApplication(Message msg)
     {
-        /*
-        if (msg.IsError) {
-            UnityEngine.Application.Quit();
-        }
-        */
+        
     }
 
     public void AddScore(int amount) {
-        score += amount;
-        scoreText.text = score.ToString();
     }
 }

@@ -809,7 +809,7 @@ ScriptsOnlyBuild:
     className: P2PNetworkBall
   - hash:
       serializedVersion: 2
-      Hash: b57b004d72000b4ca4545b64f3bf7ea9
+      Hash: 9400f6a9ef03ae0ed9674ac934ad21ad
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1259,7 +1259,7 @@ ScriptsOnlyBuild:
     className: OvrAvatarMaterialManager
   - hash:
       serializedVersion: 2
-      Hash: 18306f4d8d0b41d3621c18c026baab39
+      Hash: bfdf060b2603148594c3c06838d1c1db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
