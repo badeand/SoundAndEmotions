@@ -12,7 +12,8 @@ namespace DefaultNamespace
     {
 
         public List<SoundRecording> pickedUpSoundRecordings;
-
+        public List<CategoryContainer> categoryContainers;
+        
         public void AddToPickedUpSoundRecordings(SoundRecording soundRecording)
         { 
             pickedUpSoundRecordings.Add(soundRecording);
@@ -25,13 +26,24 @@ namespace DefaultNamespace
             SendUpdateToServer();
         }
 
-        private void SendUpdateToServer()
+        public void SendUpdateToServer()
         {
             GameState gameState = new GameState();
             
             foreach( var soundRecording in pickedUpSoundRecordings)
             {
                 gameState.PickedUpSoundRecordingNames.Add(soundRecording.Name);
+            }
+
+            foreach (var categoryContainer in categoryContainers)
+            {
+                var category = new Category();
+                category.Name = categoryContainer.categoryName;
+                foreach (var soundRecording in categoryContainer.soundRecordings)
+                {
+                    category.SoundRecordingNames.Add(soundRecording.Name);
+                }
+                gameState.Categories.Add(category);
             }
             
             StartCoroutine(Post("http://192.168.10.165:1880/gamestate", JsonUtility.ToJson(gameState)));

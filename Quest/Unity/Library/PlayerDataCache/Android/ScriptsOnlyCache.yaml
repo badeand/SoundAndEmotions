@@ -950,7 +950,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 7edf022a9829adbf691c2ec43a2971c3
+      Hash: 936f7290a734ffa837fe99ce3d81fd8a
     assemblyName: Assembly-CSharp.dll
     namespaceName: DefaultNamespace
     className: GameState
@@ -1142,7 +1142,7 @@ ScriptsOnlyBuild:
     className: OvrAvatarRemoteDriver
   - hash:
       serializedVersion: 2
-      Hash: 0c5587daf5b9c11764bf9f7202f2c17e
+      Hash: 8ca157f62d4f7c6463bd3fb681ce2c4a
     assemblyName: Assembly-CSharp.dll
     namespaceName: DefaultNamespace
     className: GameStateManager
@@ -1442,7 +1442,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 47a0e4dc8a3272a8594d9ac7983c52c8
+      Hash: f9146bb9cd4f48e309efb09ee44f8105
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CategoryContainer
@@ -1488,12 +1488,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TeleportTransitionBlink
-  - hash:
-      serializedVersion: 2
-      Hash: c88c4199b288356ec3eb2f0d85abc619
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: DefaultNamespace
-    className: Category
   - hash:
       serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e

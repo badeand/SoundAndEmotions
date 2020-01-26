@@ -1,12 +1,13 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace DefaultNamespace
 {
-    
-    public class Category : MonoBehaviour
+    [Serializable]
+    public class Category 
     {
         public string Name;
-        public HashSet<SoundRecording> SoundRecordings;
+        public List<string> SoundRecordingNames = new List<string>();
     }
 }
