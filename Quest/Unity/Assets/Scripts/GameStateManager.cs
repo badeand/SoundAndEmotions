@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -11,6 +12,12 @@ namespace DefaultNamespace
         public List<SoundRecording> pickedUpSoundRecordings = new List<SoundRecording>();
         public List<CategoryContainer> categoryContainers;
         public List<SoundRecording> managedSoundRecordings = new List<SoundRecording>();
+
+
+        private void Awake()
+        {
+            // SendUpdateToServer();
+        }
 
         public void AddToPickedUpSoundRecordings(SoundRecording soundRecording)
         {
