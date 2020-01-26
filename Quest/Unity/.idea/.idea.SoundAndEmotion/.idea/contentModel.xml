@@ -667,9 +667,11 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BallShooter.cs" t="Include" />
-          <e p="CategorizationState.cs" t="Include" />
           <e p="Category.cs" t="Include" />
+          <e p="CategoryContainer.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GameState.cs" t="Include" />
+          <e p="GameStateManager.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="SoundRecording.cs" t="Include" />
           <e p="Target.cs" t="Include" />
