@@ -12,7 +12,7 @@ namespace DefaultNamespace
         public List<SoundRecording> pickedUpSoundRecordings = new List<SoundRecording>();
         public List<CategoryContainer> categoryContainers;
         public List<SoundRecording> managedSoundRecordings = new List<SoundRecording>();
-
+        public ServerCommunicator serverCommunictator;
 
         private void Awake()
         {
@@ -69,18 +69,9 @@ namespace DefaultNamespace
                 gameState.categories.Add(category);
             }
 
-            StartCoroutine(Post("http://192.168.10.165:1880/gamestate", JsonUtility.ToJson(gameState)));
+            serverCommunictator.SendGameState(gameState);
         }
 
-        IEnumerator Post(string url, string bodyJsonString)
-        {
-            var request = new UnityWebRequest(url, "POST");
-            byte[] bodyRaw = Encoding.UTF8.GetBytes(bodyJsonString);
-            request.uploadHandler = (UploadHandler) new UploadHandlerRaw(bodyRaw);
-            request.downloadHandler = (DownloadHandler) new DownloadHandlerBuffer();
-            request.SetRequestHeader("Content-Type", "application/json");
-            yield return request.SendWebRequest();
-            Debug.Log("Status Code: " + request.responseCode);
-        }
+    
     }
 }

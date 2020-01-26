@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - CategoryContainer
     - DefaultNamespace.GameState
     - DefaultNamespace.GameStateManager
+    - DefaultNamespace.ServerCommunicator
     - GameManager
     - HandedInputSelector
     - LaserPointer
@@ -161,6 +162,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13736}
     - Class: 114
       Script: {instanceID: 13862}
+    - Class: 114
+      Script: {instanceID: 71482}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1142,7 +1145,7 @@ ScriptsOnlyBuild:
     className: OvrAvatarRemoteDriver
   - hash:
       serializedVersion: 2
-      Hash: 31c68e70b86138735b2dcd8de2927d32
+      Hash: 18310f9ccc59cbfdbd99a85818760057
     assemblyName: Assembly-CSharp.dll
     namespaceName: DefaultNamespace
     className: GameStateManager
@@ -1590,6 +1593,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DefaultNamespace
+    className: ServerCommunicator
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

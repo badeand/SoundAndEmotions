@@ -673,6 +673,7 @@
           <e p="GameState.cs" t="Include" />
           <e p="GameStateManager.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="ServerCommunicator.cs" t="Include" />
           <e p="SoundRecording.cs" t="Include" />
           <e p="Target.cs" t="Include" />
         </e>
