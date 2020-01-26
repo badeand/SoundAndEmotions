@@ -7,18 +7,13 @@ public class SoundRecording : OVRGrabbable
 {
     public AudioSource sound;
 
-    public string stylename = "";
+    public string soundName = "";
 
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
         base.GrabBegin(hand, grabPoint);
         sound.Play();
-        PostStyle(stylename);
-    }
-
-    private void PostStyle(string style)
-    {
-        StartCoroutine(Post("http://192.168.10.165:1880/hello-json", "{\"sound\" : \"" + style + "\"}"));
+        // StartCoroutine(Post("http://192.168.10.165:1880/categoryenter", "{\"sound\" : \"" + stylename + "\"}"));
     }
 
     public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)

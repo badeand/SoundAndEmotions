@@ -6,12 +6,18 @@ using UnityEngine.Networking;
 
 public class Category : MonoBehaviour
 {
-
     public string categoryName = "";
-    
+
+
     public void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(Post("http://192.168.10.165:1880/hello-json", "{\"sound\" : \"" + categoryName + "\"}"));
+        if (other.CompareTag("SoundRecording"))
+        {
+            SoundRecording soundRecording =  (SoundRecording)other.gameObject.GetComponent("SoundRecording");
+            StartCoroutine(Post("http://192.168.10.165:1880/categoryenter",
+                "{\"soundname\":\""+soundRecording.soundName+"\"}" ));
+        }
+
     }
 
     IEnumerator Post(string url, string bodyJsonString)
