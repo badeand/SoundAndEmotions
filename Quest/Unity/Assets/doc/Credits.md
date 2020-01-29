@@ -30,9 +30,26 @@ Earth by Google
 https://poly.google.com/view/1I5ip-3VOfv
 License: CC-BY
 
+Green mountain by Google
+https://poly.google.com/view/3NvfPMBZrBQ
+License: CC-BY
+
+## Icons
+Material Design Icons by Google
+https://material.io/resources/icons/?style=baseline
 
 
 ## Sounds
+
+Dog Bark by Juan_Merie_Venter
+https://freesound.org/s/327666/
+
+Vintage - Techno house loop -110bpm By Frankum & Frankumjay, Frankumjay sounds.
+https://freesound.org/s/382931/
+
+Flute trill by juskiddink
+https://freesound.org/s/65507/
+
 
 "Dramatic Organ, A.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org
 https://freesound.org/people/InspectorJ/sounds/402095/

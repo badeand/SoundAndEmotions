@@ -19,7 +19,6 @@ ScriptsOnlyBuild:
     Oculus.VR.dll:
     - OVRCameraRig
     - OVRDebugInfo
-    - OVRGrabbable
     - OVRGrabber
     - OVRHeadsetEmulator
     - OVRManager
@@ -64,6 +63,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -71,6 +72,10 @@ ScriptsOnlyBuild:
     - Class: 83
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -105,37 +110,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12816}
     - Class: 114
-      Script: {instanceID: 12930}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 12976}
+      Script: {instanceID: 12932}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 13002}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 13020}
+      Script: {instanceID: 13004}
     - Class: 114
-      Script: {instanceID: 13024}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13064}
+      Script: {instanceID: 13026}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 13066}
     - Class: 114
-      Script: {instanceID: 13402}
+      Script: {instanceID: 13194}
     - Class: 114
-      Script: {instanceID: 13476}
+      Script: {instanceID: 13404}
     - Class: 114
-      Script: {instanceID: 13494}
+      Script: {instanceID: 13478}
     - Class: 114
-      Script: {instanceID: 13574}
+      Script: {instanceID: 13496}
     - Class: 114
-      Script: {instanceID: 13726}
+      Script: {instanceID: 13576}
     - Class: 114
-      Script: {instanceID: 13736}
+      Script: {instanceID: 13728}
     - Class: 114
-      Script: {instanceID: 13862}
+      Script: {instanceID: 13738}
     - Class: 114
-      Script: {instanceID: 71482}
+      Script: {instanceID: 13864}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1041,6 +1046,12 @@ ScriptsOnlyBuild:
     className: EyeCamera
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DefaultNamespace
+    className: ServerCommunicator
+  - hash:
+      serializedVersion: 2
       Hash: a3b5c7ace69ce05da7ac8052564f6656
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1555,12 +1566,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: DefaultNamespace
-    className: ServerCommunicator
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
